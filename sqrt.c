@@ -15,12 +15,12 @@ int main(int argc, char* argv[]) {
 
 	int input = atoi(argv[1]);
 
-	if(input<0){
-		fprintf(stderr,"Square root of negative numbers is not defined\n");
-		exit(-1);
+	if(input<0){ /* sqrt of negative numbers */
+		printf("Sqrt of %d is %fi\n",input,sqrt(-1*input));
 	}
-
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	else{	/* sqrt of positive numbers */
+		printf("Sqrt of %d is %f\n",input,sqrt(input));
+	}
 
 	printf("End of program.Exiting\n");	
 
